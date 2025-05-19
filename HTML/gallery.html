@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/gallery.css">
+    <script src="../JavaScript/gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <script src="../JavaScript/menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyBlog </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+<div class="container">   
+    
+     
+    <div class="sidebar">
+        <a href="../HTML/index.html"><i class="fa-solid fa-house"><span>Home</span></i></a>    
+        <a href="../HTML/about.html"><i class="fa-solid fa-address-card"><span>About</span></i></a>
+        <a href="../HTML/gallery.html"><i class="fa-solid fa-images"><span>Gallery</span></i></a>
+        <a href="../HTML/form.html"><i class="fa-solid fa-rectangle-list"><span>Form</span></i></a>
+        <a href="../HTML/chatbot.html"><i class="fa-solid fa-robot"><span>ChatBot</span></i></a>
+    </div>
+    <div class="content">
+        <header>
+            <h1 class="header"> Gallery </h1>
+        </header>
+        <br>
+        <div class="slides">
+
+            <img src="../image/paint.jpg" width="300" height="300" class="image" style="display: block;">
+            <img src="../image/music.jpg" width="300" height="300" class="image" style="display: none;">
+            <img src="../image/netflix.jpg" width="300" height="300" class="image" style="display: none;">
+            <img src="../image/game.jpg" width="300" height="300" class="image" style="display: none;">
+            <img src="../image/gym.jpg" width="300" height="300" class="image" style="display: none;">
+        </div>
+
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&#10094; Prev</button>
+            <button onclick="nextSlide()">Next &#10095;</button>
+        </div>
+
+
+    </div> 
+</div>       
+    <footer>
+        <p class="footer"> &copy; 2025 Iasmina's - Blog</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/index_BackToTop.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/index_SearchPosts.css">
+    <script src="../JavaScript/menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyBlog </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top </button>
+    <script src="../JavaScript/index_BackToTop.js"></script>
+    <script src="../JavaScript/index_SearchPosts.js"></script>
+    <div class="sidebar">
+        <a href="../HTML/index.html"><i class="fa-solid fa-house"><span>Home</span></i></a>    
+        <a href="../HTML/about.html"><i class="fa-solid fa-address-card"><span>About</span></i></a>
+        <a href="../HTML/gallery.html"><i class="fa-solid fa-images"><span>Gallery</span></i></a>
+        <a href="../HTML/form.html"><i class="fa-solid fa-rectangle-list"><span>Form</span></i></a>
+        <a href="../HTML/chatbot.html"><i class="fa-solid fa-robot"><span>ChatBot</span></i></a>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1 class="header"> Welcome to Iasmina's Blog </h1>
+          <!--  <img src="image/under.png" width="370" height="30" alt="line" class="header">-->
+        </header>
+
+        <h2 class="hobbies">Here are my favorite hobbies<br> and some interesting facts about them.</h2>
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" onclick="searchPosts()">Search</button>
+        </div>
+        <div class="posts">
+            <div class="date">
+                <p>By Iasmina, Posted on 16.04.2018</p>
+            </div>  
+            <div class="painting">    
+                    <img src="../image/paint.jpg" width="300" height="300" class="image">
+                    <div class="text">
+                        <h2 class="title">Painting</h2>
+                        <p>Painting is a visual art form that uses colors, textures, and techniques to create expressive and meaningful images. It offers numerous benefits, such as reducing stress, enhancing creativity, improving focus, and serving as a powerful form of self-expression.</p>
+                        <p> Painting also helps develop fine motor skills, boosts emotional well-being, and can be a therapeutic way to process thoughts and emotions. Painting is a timeless and impactful means of communication.</p>
+                    </div>
+            </div>  
+
+            <div class="date">
+                <p>By Iasmina, Posted on 28.10.2023</p>
+            </div>          
+            <div class="music">
+                    <img src="../image/music.jpg" width="300" height="300" class="image">
+                    <div class="text"> 
+                        <h2 class="title">Music</h2>   
+                        <p>Music is an art form that combines sound, rhythm, and melody to create expressive and meaningful experiences. It has numerous benefits, including reducing stress, enhancing focus, boosting creativity, and improving mood.</p>
+                        <p> Music also strengthens social connections, aids memory, and can even promote physical well-being. Whether for relaxation, motivation, or emotional expression, music plays a vital role in everyday life.</p>
+                    </div>    
+            </div>
+            <div class="date">
+                <p>By Iasmina, Posted on 09.02.2020</p>
+            </div>  
+            <div class="netflix">    
+                    <img src="../image/netflix.jpg" width="300" height="300" class="image">
+                    <div class="text">
+                        <h2 class="title">Netflix</h2>
+                        <p><br><br>Netflix is a popular streaming service that offers a vast library of movies, TV shows, and documentaries across various genres. It provides entertainment on demand, allowing users to watch content anytime, anywhere.<br><br><br><br><br></p>
+    
+                    </div>
+            </div>  
+
+            <div class="date">
+                <p>By Iasmina, Posted on 27.11.2021</p>
+            </div>  
+            <div class="game">    
+                    <img src="../image/game.jpg" width="300" height="300" class="image">
+                    <div class="text">
+                        <h2 class="title">Gaming</h2>
+                        <p><br>Gaming is an interactive form of entertainment that engages players through storytelling, strategy, and skill-based challenges. It offers numerous benefits, such as improving cognitive skills, enhancing problem-solving abilities, and boosting creativity. Gaming can also reduce stress and strengthen social connections.<br><br><br><br></p>
+                    </div>
+            </div>      
+
+            <div class="date">
+                <p>By Iasmina, Posted on 11.01.2024</p>
+            </div>  
+            <div class="gym">    
+                    <img src="../image/gym.jpg" width="300" height="300" class="image">
+                    <div class="text">
+                        <h2 class="title">Gym</h2>
+                        <p><br>The gym is a dedicated space for physical exercise, offering equipment and facilities for strength training, cardio, and overall fitness. Regular gym workouts help improve physical health, boost mental well-being, and enhance energy levels. Exercising at the gym also promotes discipline, reduces stress, and supports weight management.<br><br><br> </p>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</div>
+        <footer>
+            <p class="footer"> &copy; 2025 Iasmina's - Blog</p>
+        </footer>
+    
+</body>
+
+</html>
