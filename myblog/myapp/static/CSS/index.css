@@ -1,0 +1,260 @@
+.header{
+    background-color: #d8545d;
+    color:#ffffff;
+    white-space: nowrap;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 30px;
+    text-shadow: 0 0 15px #671300;
+    animation: zoomIn 0.5s ease-out;
+    
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* background color --------------------------------------------------------------*/
+body {
+    background: linear-gradient(135deg, #ebebdd , #edd9d9);
+    font-family: 'Afacad Flux', sans-serif;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url('../image/strawberry.png'), 
+        url('../image/strawberry2.png'),
+        url('../image/strawberry2.png'),
+        url('../image/strawberry3.png'), 
+        url('../image/strawberry4.png'),
+        url('../image/strawberry4.png'); 
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 5% 30%, 50% 70%, 80% 15%, 15% 98%, 95% 80%, 40% 12%;
+    background-size: 200px, 300px, 300px, 350px, 200px, 200px;
+    opacity: 0.3; 
+    z-index: -1;
+}
+
+/* 2 fav hobbies------------------------------------------------------------------------*/
+.hobbies{
+    display: block;
+    color:#321b1b;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px #7c373c8e;
+    
+}
+/* Posts ----------------------------------------------------------------------------*/
+.painting{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 110px;
+
+}
+
+
+.text{
+    width: 40%;
+    background-color: #8bb57c ;
+    border-radius: 5px;
+    padding: 32px 70px;
+    margin-top: 10px;
+    color:#fff9e7dc;
+    text-shadow: 0 0 6px #7cb284c9;
+    
+}
+.title{
+    text-align: center;
+    color:#ffffff;
+    text-shadow: 0 0 17px #ffd700, 0 0 5px #d5a504; 
+
+}
+.date{
+    background-color: #8bb57c ;
+    border-radius: 5px;
+    padding: 1px ; 
+    text-align: center; 
+    margin-left: 5%;
+    width: 800px;
+    color:#ffffff;
+    text-shadow: 0 0 10px #4a7850;
+
+    
+}  
+
+/*images-----------------------------------------------------------------------------*/
+.image{
+    display: block;
+    margin-left: 5%;
+    margin-right: 10px;  
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 300px;   
+    height: 300px;
+    
+}
+.footer{
+    color: #613139;
+    text-align: right;
+    right: 20px;
+    bottom: 0;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+.post-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #ffd700;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.post-link:hover {
+    color: #ffe1e1;
+    text-shadow: 0 0 12px #ffa07a, 0 0 8px #ffd700;
+}
+
+section {
+    background-color: #fff5f5;
+    padding: 40px 30px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px #d776761a;
+    border: 2px solid #ffd9d9;
+    max-width: 900px;
+}
+
+
+.review-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #d8545d;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ffc0c0;
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 25px;
+}
+
+.review-box {
+    background-color: #fffdfd;
+    border: 1px solid #f5c9c9;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 8px rgba(216, 84, 93, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    transform: none;
+}
+
+
+.review-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(216, 84, 93, 0.15);
+}
+
+.review-header {
+    font-weight: bold;
+    color: #5a2a2a;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.review-rating {
+    color: #6c3636;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.review-comment {
+    color: #4a3a3a;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.review-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.review-btn {
+    background-color: #d8545d;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.review-btn:hover {
+    background-color: #c5424d;
+}
+
+.review-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #d8545d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.review-link:hover {
+    background-color: #c5424d;
+}

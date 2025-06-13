@@ -1,0 +1,130 @@
+.header{
+    background-color: #d8545d;
+    color:#ffffff;
+    white-space: nowrap;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 30px;
+    text-shadow: 0 0 15px #671300;
+    animation: zoomIn 0.5s ease-out;
+
+    
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* background color --------------------------------------------------------------*/
+body {
+    background: linear-gradient(135deg, #ebebdd , #edd9d9);
+    font-family: 'Afacad Flux', sans-serif;
+    padding-bottom: 120px;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url('../image/strawberry.png'), 
+        url('../image/strawberry2.png'),
+        url('../image/strawberry2.png'),
+        url('../image/strawberry3.png'), 
+        url('../image/strawberry4.png'),
+        url('../image/strawberry4.png'); 
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 5% 30%, 50% 70%, 80% 15%, 15% 98%, 95% 80%, 40% 12%;
+    background-size: 200px, 300px, 300px, 350px, 200px, 200px;
+    opacity: 0.3; 
+    z-index: -1;
+}
+
+
+/* text about ------------------------------------------------------------------------------*/
+.about {
+    display: flex;
+    justify-content: space-between;  
+  }
+.about p {
+    width: 50%;
+    background-color: #8bb57c ;
+    border-radius: 20px;
+    padding: 40px 40px;
+    margin-top: 10px;
+    color:#fff9e7dc;
+    text-shadow: 0 0 6px #7cb284c9;
+  }
+
+/*table--------------------------------------------------------------------------------------*/
+table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin: 20px 20px
+  }
+th, td {
+    padding: 15px;
+    border: 1px solid #d8545d; 
+    text-align: center;
+  }
+th {
+    background-color: #e8cd3680; 
+    color: white;
+    text-shadow: 0 0 15px #e6a54475;
+    font-weight: bold;
+  }
+tbody tr {
+    background-color: #e48d928f; 
+  }
+
+/*footer-------------------------------------------------------------------------------------*/
+.footer{
+    position: fixed;
+    color: #613139;
+    text-align: right;
+    right: 20px;
+    bottom: 0;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

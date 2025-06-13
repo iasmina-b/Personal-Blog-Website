@@ -1,0 +1,79 @@
+/* MENU ---------------------------------------------------------------------------*/
+.sidebar {
+    width: 60px; 
+    height: 100vh;
+    background: #d8545d ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    text-align: center;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 1000;
+
+}
+.sidebar:hover {
+    width: 200px;
+    
+}
+/* icon size menu ------------------------------------------------------------------*/
+.sidebar i {
+    font-size: 20px;
+    width: 24px;
+
+}
+
+/* menu links -----------------------------------------------------------------------*/
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;  /* Remove underline */
+    transition: background-color 0.3s ease;
+    font-family: 'Afacad Flux', sans-serif;
+    gap: 12px;
+        
+}
+.sidebar a span {
+    display: none;
+    margin-left: 15px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: inherit;
+    opacity: 0;
+    visibility: hidden; /* Keeps the space but hides the text */
+    transform: translateX(-20px); /* Slide to the left */
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+    text-transform: none;
+    
+}
+
+/* shift content right, not covered by menu------------------------------------------*/
+.content {
+    margin-left: 80px; 
+    
+}
+
+/* Hover effect menu---------------------------------------------------------------- */
+.sidebar a:hover{
+    text-shadow: 0 0 10px #FFD700; 
+    transform: scale(1.1);
+
+}
+.sidebar.expanded a span,
+.sidebar:hover a span {
+    opacity: 1;
+    visibility: visible; /* Make the text visible */
+    transform: translateX(0); /* Move to original position */
+}
+
+.sidebar a:hover i {
+    color: #ffffff; 
+}
+
+.content {
+    margin-left: 80px; 
+}
